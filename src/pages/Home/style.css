@@ -1,0 +1,32 @@
+.header {
+  background-color: red;
+  width: 100%;
+  position: fixed;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: rosybrown;
+  width: 350px;
+  padding: 25px;
+}
+
+.feed {
+  background-color: yellow;
+  width: 100%;
+  padding: 20px;
+}
