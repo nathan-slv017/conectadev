@@ -21,7 +21,7 @@ const posts = [
     date: "April 7, 2020",
     description: "Fala pessoal! Qual o framework favorito de vcs?",
     hashtags: "#dornet, #javascript, #reactjs, #developer",
-    image: "/images/posts/post9.jpeg" ,
+    image: "/images/posts/post9.jpeg",
   },
   {
     id: 2,
