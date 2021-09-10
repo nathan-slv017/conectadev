@@ -1,17 +1,19 @@
-import { createMuiTheme } from '@material-ui/core/styles'
-import { colors } from '@material-ui/core'
+import { createTheme } from '@material-ui/core/styles/'
+import indigo from '@material-ui/core/colors/indigo';
+import orange from '@material-ui/core/colors/orange';
 
-const theme = createMuiTheme({
+
+const theme = createTheme({
     palette: {
         primary: {
-            dark: colors.indigo['A700'],
-            main: colors.indigo['A400'],
-            light: colors.indigo['A200']
+            dark: indigo['A700'],
+            main: indigo['A400'],
+            light: indigo['A200']
         },
         secondary: {
-            dark: colors.orange['A700'],
-            main: colors.orange['A700'],
-            light: colors.orange['A200']
+            dark: orange['A700'],
+            main: orange['A700'],
+            light: orange['A200']
         }
     },
     typography: {

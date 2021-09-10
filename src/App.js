@@ -1,6 +1,6 @@
 import React from 'react';
-import { ThemeProvider } from '@material-ui/core';
-
+import { ThemeProvider } from '@material-ui/core/styles';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from './pages/Home'
 import Signin from './pages/Signin/index'
@@ -12,18 +12,14 @@ function App() {
 
   // const url = window.location.href
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        {/* {url === 'http://localhost:3000/'
-          ? <Home />
-          : <Signin />
-        } */}
-        <Home />
-
-
-
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sigin" element={<Signin />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }
 
